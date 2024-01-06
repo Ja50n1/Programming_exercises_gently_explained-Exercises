@@ -1,10 +1,13 @@
-from ../ex13-Sum_and_Product/sum_and_product import calculateSum
-
+# import sys
+# sys.path.insert(0, "/home/repos/gently_explained/ex13-Sum_and_Product")
+from sum_and_product import calculateSum
 
 
 def average(numbers):
     if len(numbers) == 0:
         return None
+    sum_of_list_elements = calculateSum(numbers)
+    return sum_of_list_elements / len(numbers)
 
 
 def main():
