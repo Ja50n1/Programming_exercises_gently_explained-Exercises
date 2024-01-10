@@ -3,9 +3,9 @@ def drawBorder(width, height):
         return ""
     for h in range(height):
         if h == 0 or h == (height - 1):
-            print("+" + "-" * (width - 3) + "+")
+            print("+" + " -" * (width - 3) + " +")
         else:
-            print("|" + " " * (width - 3) + "|")
+            print("|" + "  " * (width - 3) + " |")
 
 
 def main():
