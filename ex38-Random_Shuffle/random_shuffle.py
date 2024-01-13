@@ -2,7 +2,11 @@ import random
 
 
 def shuffle(values):
-    pass
+    for index in range(len(values)):
+        random_index = random.randint(0, (len(values) - 1))
+        temp = values[index]
+        values[index] = values[random_index]
+        values[random_index] = temp
 
 
 def main():
